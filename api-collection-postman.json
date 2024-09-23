@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "45343b7a-b36b-46c6-aa28-15c6a479eae5",
+		"name": "mail-sender",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35574295"
+	},
+	"item": [
+		{
+			"name": "send-verification-link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"temp@mail.com\",\r\n    \"verificationLink\":\"https://github.com/shiva-kumar-sahoo\",\r\n    \"appName\": \"app name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/send-verification-link",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"send-verification-link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send-forget-password-link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"temp@mail.com\",\r\n    \"forgetPasswordLink\":\"https://github.com/shiva-kumar-sahoo\",\r\n    \"appName\": \"app name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/send-forget-password-link",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"send-forget-password-link"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send-verification-code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"temp@mail.com\",\r\n    \"verificationCode\":632487,\r\n    \"appName\": \"app name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/send-verification-code",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"send-verification-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send-forget-password-code",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"temp@mail.com\",\r\n    \"forgetPasswordCode\":904582,\r\n    \"appName\": \"app name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/send-forget-password-code",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"send-forget-password-code"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
